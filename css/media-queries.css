@@ -1,223 +1,173 @@
-
 /* CSS Document */
 
-
-
-/* 
-*    Media Quieries 
-*/ 
+/* * Media Quieries */
 
 @media screen and (max-width: 1000px) {
-
   body {
-	  margin: 0;
+    margin : 0;
   }
-  
   .page-container,
-  .site-header,
-  .site-footer {
-	  width: 100%;
+  .site-footer,
+  .site-header {
+    width : 100%;
   }
 }
 
 @media screen and (max-width: 950px) {
-
   .topic-su-post {
-	  max-height: 275px !important;
+    max-height : 275px !important;
   }
 }
 
 @media screen and (max-width: 900px) {
-
   .feature-su-post,
   .feature-su-post-thumbnail > img {
-	  height: 85%;
-	  width: 215px;
+    width  : 215px;
+    height : 85%;
   }
-  
   .sidebar-nav {
-	  -webkit-padding-start: 0;
   }
-  
   .sidebar-container,
   .sidebar-container .sidebar-fixed {
-	  width: 20%;
+    width : 20%;
   }
 }
 
 @media screen and (max-width: 800px) {
-
   .homepage-banner-img.text-7 {
-	  display: none;
+    display : none;
   }
-  
   .homepage-banner-img {
-	  width: 23% !important;
+    width : 23% !important;
   }
-  
   #homepage-hero-banner {
-	  right: 25px;
+    right : 25px;
   }
-  
   .homepage-colored-row {
-	  height: 1000px;
+    height : 1000px;
   }
-  
   .feature-su-post,
   .feature-su-post-thumbnail > img {
-	  height: 75%;
-	  width: 175px;
+    width  : 175px;
+    height : 75%;
   }
-  
   .feature-su-posts-loop {
-	  margin: 10px 10% 0;
+    margin : 10px 10% 0;
   }
-  
   .homepage-block-row .su-column {
-	  float: left !important;
-	  width: 33% !important;
+    width : 33% !important;
+    float : left !important;
   }
-  
   img.size-medium {
-	  height: 150px;
-	  width: 45%;
+    width  : 45%;
+    height : 150px;
   }
-  
   .sidebar-nav-title {
-	  font-size: 12px;
+    font-size : 12px;
   }
-  
   #footer-nav-container {
-	  margin-left: 15% !important;
+    margin-left : 15% !important;
   }
 }
 
 @media screen and (max-width: 650px) {
-
   .feature-su-posts-loop {
-	  margin: 10px 2% 0;
+    margin : 10px 2% 0;
   }
-  
   #footer-nav-container {
-	  margin-left: 5% !important;
+    margin-left : 5% !important;
   }
-  
   .homepage-slogan {
-	  font-size: 20pt;
+    font-size : 20pt;
   }
 }
 
 @media screen and (max-width: 641px) {
-
   nav.header-nav {
-	  margin-top: -60px;
+    margin-top : -60px;
   }
-  
   .translate {
-	  clear: both;
-	  margin-left: 25%;
+    clear       : both;
+    margin-left : 25%;
   }
 }
 
 @media screen and (max-width: 600px) {
-
-  .full-page-content,
-  #full-page-content {
-	  padding: 0;
+  #full-page-content,
+  .full-page-content {
+    padding : 0;
   }
-  
   .sponsors {
-	  hieght: 25px;
   }
-  
   .site-footer {
-	  height: 150px;
+    height : 150px;
   }
-  
   .homepage-banner {
-	  margin-top: 50px;
-	  margin-left: 45px;
+    margin-top  : 50px;
+    margin-left : 45px;
   }
-  
   .homepage-block-row .su-column {
-	  float: none !important;
-	  margin: 0 0 0 10% !important;
-	  width: 75% !important;
+    width  : 75% !important;
+    float  : none !important;
+    margin : 0 0 0 10% !important;
   }
-  
   .homepage-block {
-	  padding: 0;
+    padding : 0;
   }
-  
-  .wfcc-home-arrow,
-  .primary-nav-item-list {
-	  display: none;
+  .primary-nav-item-list,
+  .wfcc-home-arrow {
+    display : none;
   }
-  
   .feature-su-post-title a {
-	  font-size: 60%;
+    font-size : 60%;
   }
-  
   .feature-excpert {
-	  font-size: 60%;
+    font-size : 60%;
   }
-  
   .feature-su-post,
   .feature-su-post-thumbnail > img {
-	  float: none;
-	  height: 85%;
-	  width: 215px;
+    width  : 215px;
+    height : 85%;
+    float  : none;
   }
-  
   .feature-su-post {
-	  margin-bottom: 100px;
-	  margin-left: 25%
+    margin-bottom : 100px;
+    margin-left   : 25%;
   }
-  
   .site-header,
-  nav.main-nav,
-  .top-float-bar {
-	  display: none;
+  .top-float-bar,
+  nav.main-nav {
+    display : none;
   }
-  
   .page-container {
-	  margin-top: 0;
+    margin-top : 0;
   }
-  
   .content-container {
-	  margin: 0 auto;
-	  width: 90%;
+    width  : 90%;
+    margin : 0 auto;
   }
-  
   .sidebar-container {
-	  display: none;
+    display : none;
   }
-  
   #activity-stream {
-	  padding-left: 3px;
+    padding-left : 3px;
   }
 }
 
 @media screen and (max-width: 500px) {
-
-   .homepage-banner-img.text-5 {
-	  display: none;
+  .homepage-banner-img.text-5 {
+    display : none;
   }
-  
   .homepage-banner {
-	  margin-left: 25px;
+    margin-left : 25px;
   }
-  
-
   .homepage-banner-img {
-	  width: 32% !important;
+    width : 32% !important;
   }
-  
   .topic-su-posts {
-	  margin-left: 20%;
+    margin-left : 20%;
   }
-  
   .homepage-slogan {
-	  font-size: 15pt;
+    font-size : 15pt;
   }
 }

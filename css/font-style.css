@@ -1,88 +1,95 @@
 /* CSS Document */
 
 @font-face {
-	font-family: 'WCManoNegraBta';
-	src: url('../fonts/WCManoNegraBta.otf');
+  font-family : 'WCManoNegraBta';
+  src         : url('../fonts/WCManoNegraBta.otf');
 }
 
 @font-face {
-	font-family: 'BreeSerif';
-	src: url('../fonts/BreeSerif-Regular.otf');
+  font-family : 'BreeSerif';
+  src         : url('../fonts/BreeSerif-Regular.otf');
 }
 
 @font-face {
-	font-family: 'OpenSans';
-	src: url('../fonts/OpenSans-Bold.ttf');
-	src: url('../fonts/OpenSans-Regular.ttf');
+  font-family : 'OpenSans';
+  src         : url('../fonts/OpenSans-Bold.ttf');
+  src         : url('../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
-	font-family: 'OpenSansItalic';
-	src: url('../fonts/OpenSans-LightItalic.ttf');
+  font-family : 'OpenSansItalic';
+  src         : url('../fonts/OpenSans-LightItalic.ttf');
 }
 
 @font-face {
-	font-family: 'OpenSansBold';
-	src: url('../fonts/OpenSans-Bold.ttf');
+  font-family : 'OpenSansBold';
+  src         : url('../fonts/OpenSans-Bold.ttf');
 }
 
 @font-face {
-	font-family: 'Chalkduster';
-	src: url('../fonts/Chalkduster.ttf');
+  font-family : 'Chalkduster';
+  src         : url('../fonts/Chalkduster.ttf');
 }
 
 h1,
 h2,
 h3,
 h4 {
-	color: #58585a;
-	margin-bottom: 0;
+  margin-bottom : 0;
+  color         : #58585a;
 }
 
 h1,
 h2 {
-	font-family: "BreeSerif";
-	font-weight: bold;
+  font-family : "BreeSerif";
+  font-weight : bold;
 }
 
 h1 {
-	font-size: 22pt;
+  font-size : 22pt;
 }
 
 h2 {
-	font-size: 18pt;
+  font-size : 18pt;
 }
 
 h3,
 h4 {
-	font-size: 14pt;
+  font-size : 14pt;
 }
 
 h3 {
-	font-family: "OpenSansItalic";
-	
+  font-family : "OpenSansItalic";
 }
 
 h4 {
-	font-family: "OpenSansBold";
-	
+  font-family : "OpenSansBold";
 }
 
-h5, h6 {
-	color: #58585a;
-	font-family: 'OpenSans';
-	font-size: 12pt;
-	margin-top: 0px;
+h5,
+h6 {
+  margin-top  : 0px;
+  color       : #58585a;
+  font-family : 'OpenSans';
+  font-size   : 12pt;
 }
 
 p {
-	margin-top: 0;
+  margin-top : 0;
 }
 
-
-div, p, ol, ul, li, span, a { font-family: 'OpenSans';  color: #58585a;}
+a,
+div,
+li,
+ol,
+p,
+span,
+ul {
+  color       : #58585a;
+  font-family : 'OpenSans';
+}
 
 a {
-	text-decoration: none;
-	color: #054f7d;
+  color           : #054f7d;
+  text-decoration : none;
 }
