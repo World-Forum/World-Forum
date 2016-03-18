@@ -1,0 +1,511 @@
+
+/* CSS Document */
+
+
+/* --------------- Featured Posts --------------- */
+.su-slider {
+	top: -225px;
+}
+
+.su-slider-slide-title {
+	-webkit-border-radius: 12px !important;
+	background-color: rgba(5,79,125,0.8) !important;
+	border-radius: 12px;
+	bottom: auto !important;
+	left: 0 !important;
+	max-width: 100% !important;
+	top: 0 !important;
+	width: 100%;
+}
+
+.su-slider-pagination {
+	visibility: hidden !important;
+}
+
+.feature-su-posts-loop {
+	display: inline-block;
+	height: 250px;
+	margin: 10px 6% 0;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.feature-su-post-title {
+	margin-top: 0;
+	text-align: center;
+}
+
+.feature-su-post-title a {
+	color: #58585a;
+	font-size: 18px;
+}
+
+.feature-su-post {
+	float: left;
+	padding: 0 1% 0;
+	height: 200px;
+	width: 250px;
+}
+
+.feature-su-post-thumbnail > img {
+	height: 100%;
+	width: 250px;
+}
+
+.feature-excerpt {
+	font-size: 12px;
+	padding: 0 5px 0;
+}
+
+/* --------------- Topic Posts --------------- */
+.topic-su-posts {
+	display: inline-block;
+}
+
+.topic-su-post {
+	background: #b6dbd1;
+	border-radius: 12px 12px 8px 8px;
+	float: left;
+	margin: 20px 5px 10px;
+	width: 200px;
+}
+
+.topic-su-posts-default-loop .topic-su-post-title {
+	font-size: 18px;
+	margin: 5px 0 -5px 0 !important;
+	text-align: center !important;
+}
+
+.topic-su-post-title a {
+	color: #58585a;
+}
+
+.topic-su-posts-default-loop .topic-su-post-thumbnail img {
+	height: 95% !important;
+	width: 100% !important;
+}
+
+.topic-su-post-excerpt {
+	font-size: 11px;
+	height: 75px;
+	padding: 5px;
+	text-align: center;
+}
+
+.topic-su-post-button {
+	background: #0f746b;
+	border-radius: 0 0 12px 12px;
+	font-size: 12px;
+	padding: 5px 0 5px;
+	text-align: center;
+}
+
+.topic-su-post-button a {
+	color: #FFFFFF;
+}
+
+.attachment-post-thumbnail {
+	border-radius: 12px 12px 0 0;
+}
+
+/* 
+ *Carousel
+*/
+
+.su-carousel-slide-title {
+	background: rgb(15,116,107) !important;
+	bottom: 0 !important;
+	border-radius: 0 0 12px 12px;
+	font-family: BreeSerif;
+	font-size: inherit !important;
+	padding: 5px 10px 5px !important;
+	text-align: center;
+	left: 5px !important;
+	right: 5px !important;
+}
+
+.su-carousel .su-carousel-slide img {
+	border: 0 !important;
+	border-radius: 12px !important;
+	height: inherit !important;
+	padding: 0 !important;
+}
+
+.su-carousel-slide {
+	max-width: 300px;
+	width: 100%;
+}
+
+/*
+* Gallery
+*/
+
+.su-custom-gallery-slide img {
+	background: transparent !important;
+	border: 0 !important;
+	height: auto;
+	max-width: 95px !important;
+	width: auto !important;
+}
+
+/* Focused Work
+*/ 
+
+.mission-box {
+	border: 2px solid rgba(88,88,90,0.3) !important;
+	border-radius: 12px !important;
+}
+
+.mission-box .su-box-content {
+	border-radius: 0 0 12px 12px;
+}
+
+.mission-box .su-box-title {
+	border-radius: 12px 12px 0 0;
+}
+
+.topic-mission .su-box-content,
+.topic-mission .su-box-title {
+	background-color: rgba(255,255,255,0.4) !important;
+	border-color: #58585a !important;
+	border-radius: 12px !important;
+}
+
+/* --------------- Focused Work Resource & News Box --------------- */
+
+.resource-su-post {
+	background-color: rgba(255,255,255,0.25);
+	border: 2px solid rgba(88,88,90,0.3) !important;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	font-size: 12pt;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+/* --------------- WP-Members --------------- */
+.button_div,
+.link-text {
+	text-align: left !important;
+}
+
+div.link-text {
+	font-weight: bold !important;
+	margin-top: 5px !important;
+}
+
+div.link-text a {
+	font-weight: normal !important;
+}
+
+input#rememberme {
+	width: 25px !important;
+}
+
+input.buttons {
+	width: 100%;
+}
+
+/* --------------- Forums --------------- */
+.subscription-toggle {
+	float: right;
+	margin-top: 12px;
+}
+
+.button {
+	color: inherit;
+	border-radius: 12px;
+}
+
+/*
+* BuddyPress 
+*/
+
+
+/*
+* BuddyPress - Forums
+*/
+
+#bbpress-forums div.bbp-forum-header,
+#bbpress-forums div.bbp-topic-header,
+#bbpress-forums div.bbp-reply-header {
+	background: rgba(15,116,107,0.6);
+	color: #FFFFFF;
+}
+
+#bbpress-forums li.bbp-header,
+#bbpress-forums li.bbp-footer {
+	background: rgba(15,116,107,0.8);
+}
+
+#bbpress-forums li.bbp-header ul li {
+	color: #FFFFFF;
+}
+
+#bbpress-forums span.bbp-admin-links a {
+	color: #FFFFFF;
+}
+
+#bbpress-forums div.odd,
+#bbpress-forums ul.odd {
+	background: rgba(15,116,107,0.1);
+}
+
+#bbpress-forums div.even,
+#bbpress-forums ul.even {
+	background: rgba(15,116,107,0.2);
+}
+
+#bbpress-forums .bbp-topic-form,
+#bbpress-forums .bbp-reply-form {
+	background: rgba(15,116,107,0.3);
+}
+
+#bbpress-forums fieldset.bbp-form {
+	border: 0;
+}
+
+#bbpress-forums fieldset.bbp-form legend {
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+/* BuddyPress - Members Loop */
+ul.item-list li {
+	display: inline-block !important;
+}
+
+/*
+* BuddyPress Changes 
+*/
+
+div.item-list-tabs ul li {
+	border-right: 1px solid;
+	font-size: 14px;
+	padding-right: 5px;
+}
+
+#bbp_search_submit,
+#bbp_topic_submit,
+#bbp_reply_submit {
+	background-color: rgba(15,116,107,0.8);
+	border: none;
+	border-radius: 12px;
+	color: #FFFFFF;
+	font-size: inherit;
+	padding: 5px;
+}
+
+.bbp-reply-header a.bbp-reply-permalink {
+	display: none !important;
+}
+
+div.link-text {
+}
+
+/* 
+* BuddyPress - Member - Profile
+*/
+#item-header-avatar {
+	float: left;
+	margin-right: 15px;
+}
+
+#item-body,
+#item-ul li {
+	background: rgba(55,186,165,0.3);
+}
+
+#subnav ul li,
+#bp-browse-button,
+.avatar-nav-items li,
+.submit input,
+.activity-meta a,
+.load-more a {
+	background: rgba(255,255,255,0.5);
+}
+
+.submit input,
+#bp-browse-button,
+.activity-meta a,
+.load-more a {
+	border: none;
+	border-radius: 12px;
+	margin-left: 10px;
+	padding: 5px 10px 5px;
+}
+
+.load-more {
+	border: none !important;
+	margin-top: 20px;
+}
+
+#item-body {
+	border-radius: 2px;
+	margin: 50px auto;
+	padding: 15px;
+	width: 90%;
+}
+
+#item-ul,
+#subnav ul {
+	display: inline-block;
+	padding-left: 0;
+}
+
+#subnav ul li,
+#item-ul li {
+	border: none;
+	border-radius: 12px;
+	float: left;
+	list-style: none;
+	padding: 5px 10px 5px;
+	margin: 0 5px 0;
+}
+
+#send-private-message a {
+	border: 1px solid #58585a;
+	border-radius: 12px;
+	font-weight: bold;
+	padding: 2px 5px 2px;
+}
+
+.drag-drop-inside p {
+	color: #58585a !important;
+}
+
+#bp-browse-button.bp-browse-button {
+	clear: both !important;
+}
+
+.field_type_textbox td {
+	padding: 0 5px 0;
+}
+
+.radio li {
+	list-style: none;
+}
+
+label {
+	font-weight: bold;
+}
+
+#message_content {
+	width: 99%;
+}
+
+/*
+* BuddyPress - Profile - Activity Stream
+*/
+#activity-stream {
+	padding-left: 10px;
+}
+
+#activity-stream li {
+	border-bottom: 1px solid #58585a;
+	width: 97.5%;
+	padding: 15px 5px 15px;
+}
+
+/*
+* BuddyPress - Member - Directory
+*/
+
+#members-directory-form h3 {
+	font-family: BreeSerif;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+#members-all {
+	list-style: none;
+}
+
+#members-all a {
+	background: rgba(15,116,107,0.8);
+	border-radius: 12px;
+	color: white;
+	padding: 5px
+}
+
+#members-dir-list {
+	display: inline-block;
+	padding-left: 0;
+}
+
+#members-dir-list li {
+	float: left;
+	list-style: none;
+	margin: 7px;
+}
+
+div.item-list-tabs ul li {
+	border: 0;
+}
+
+.item-avatar {
+	width: 150px;
+	height: 150px;
+}
+
+.item-title {
+	text-align: center;
+	width: 150px;
+}
+
+/* 
+* BuddyPress - Member - Hide Nav Items
+*/
+
+#blogs-personal-li,
+#forums-personal-li,
+#groups-personal-li,
+#activity-groups-personal-li,
+#settings-personal-li,
+#post-mention,
+.activity-comments,
+.activity-meta .acomment-reply,
+.field-visibility-settings-notoggle {
+	display: none !important;
+}
+
+.profile-fields {
+	background: rgba(255,255,255,0.4);
+}
+
+/*
+* WP-Member - Login
+*/
+#wpmem_login {
+}
+
+#wpmem_login form fieldset,
+#wpmem_reg form fieldset {
+	border: 0;
+}
+
+#wpmem_login form fieldset legend,
+#wpmem_reg form fieldset legend {
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+#wpmem_login form fieldset .div_text input,
+#wpmem_reg form fieldset .div_text input {
+	width: 250px;
+}
+
+#wpmem_login form fieldset .button_div input,
+#wpmem_reg form fieldset .button_div input {
+	width: 100px;
+}
+
+.div_text img {
+	float: left;
+	margin-right: 15px;
+}
+
+.button_div {
+	margin-top: 15px;
+}
