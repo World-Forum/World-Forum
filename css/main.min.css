@@ -1,3 +1,8 @@
+/**
+*    Main.css
+*  ------------------------------------------
+*  This is the CSS for the main structure of the theme
+*/
 body {
   margin: 0 auto;
   max-width: 1000px;
@@ -11,11 +16,16 @@ nav ul {
   list-style: none;
 }
 
+
 nav ul li a {
   font-weight: normal;
   padding: 10px;
 }
-
+/**
+* -------------------------------
+*      HEADER
+* -------------------------------
+*/
 header {
   background: #054f7d;
   margin-top: 50px;
@@ -23,16 +33,36 @@ header {
   z-index: 10;
 }
 
-#top-nav-container {
+#top_bar {
   background: inherit;
-  flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 10px;
   position: fixed;
-  max-width: 1000px;
-  width: 100%;
+  max-width: 980px;
+  width:100%;
+  z-index: 1000;
 }
 
-#top-nav-container ul {
-  margin-right: 15px;
+.search-form input {
+  border-radius: 5px;
+
+}
+
+.search-form input[type='submit'] {
+  background: #054f7d;
+  border: none;
+  color: #ffffff;
+}
+
+.top_bar_widget {
+  display: flex;
+
+}
+
+.top_bar_widget form {
+  align-self: center;
 }
 
 #primary-nav-container {
@@ -105,6 +135,12 @@ nav .no-padding-start {
   -webkit-padding-start: 0;
 }
 
+/**
+* -------------------------------
+*        BODY
+* -------------------------------
+*/
+
 section {
   background: rgba(255, 255, 255, 0.75);
   display: flex;
@@ -114,18 +150,77 @@ section {
 main {
   padding: 20px;
 }
-
+/* HOMEPAGE */
 #front-page {
   padding: 0;
+  margin-top: 50px;
 }
 
-/***********
-Sidebar
-************/
+#homepage-excerpt-bg {
+  height: 115px;
+  margin: -50px 0 25px;
+}
+
+#homepage-excerpt {
+  margin-top: -100px;
+  padding: 0 15%;
+}
+
+#homepage-header-text {
+  color: #054f7d;
+  font-family: WCManoNegraBta;
+  font-size: 26pt;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.50-margin-top {
+  margin-top: 50px;
+}
+
+#homepage-section-bucket-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.homepage-section-bucket {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.homepage-section-bucket img {
+  height: 100%;
+  max-width: 200px;
+  max-height: 75px;
+  width: 100%;
+}
+
+.primary-color-bg {
+  background: #054f7d;
+  opacity: 0.2;
+
+}
+
+
+.featured-resources-row {
+  height: 500px;
+}
+
+.homepage-colored-row {
+  margin-top: -525px;
+}
+
+/* SIDEBAR */
 aside {
   display: flex;
   flex-direction: column;
   max-width: 225px;
+  min-width: 200px;
   padding: 20px;
   width: 100%;
 }
@@ -167,20 +262,21 @@ aside {
   text-align: right;
 }
 
-/************
-Widgets
-************/
+/* WIDGETS */
 #widget-sotm {
   align-content: flex-end;
   display: flex;
   flex: 1;
 }
 
-/************
-Footer
-************/
+/**
+* -------------------------------
+*      FOOTER
+* -------------------------------
+*/
 footer {
   background: #054f7d;
+  color: #ffffff;
   padding: 10px;
   text-align: center;
 }
@@ -211,20 +307,22 @@ footer {
 
 }
 #widget-sotm  .sotm-title {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 #widget-sotm  .sotm-title-special {
-color:#4db5a8;
-border-bottom: 1px solid #cccccc;
-font-size: .9em;
-padding-bottom: 5px;
+  color:#4db5a8;
+  border-bottom: 1px solid #cccccc;
+  font-size: .9em;
+  padding-bottom: 5px;
 }
 
-/***********
-Gallery
-************/
+/**
+* -------------------------------
+*      GALLERY
+* -------------------------------
+*/
 gallery {
-  display: flex;
+
   margin: 0 auto;
 }
 
@@ -270,6 +368,54 @@ a img.aligncenter {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.gallery {
+  padding: 10px;
+  width: 100%;
+}
+
+.gallery figure {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-columns-1 figure {
+  width: 100%;
+}
+.gallery-columns-2 figure {
+  width: 48%;
+}
+.gallery-columns-3 figure {
+  width: 31%;
+}
+.gallery-columns-4 figure {
+  width: 23%;
+}
+.gallery-columns-5 figure {
+  width: 18%;
+}
+.gallery-columns-6 figure {
+  width: 14%;
+}
+.gallery-columns-7 figure {
+  width: 12%;
+}
+.gallery-columns-8 figure {
+  width: 10%;
+}
+.gallery-columns-9 figure {
+  width: 9%;
+}
+
+.gallery figure img {
+  width: 100%;%TiarlAp16
+
 }
 
 .wp-caption {
@@ -337,3 +483,8 @@ a img.aligncenter {
   font-weight: bold;
   line-height: normal;
 }
+/**
+* ---------------------------------------
+*      MEDIA QUERIES
+* ---------------------------------------
+*/

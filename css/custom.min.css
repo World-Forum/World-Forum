@@ -46,19 +46,48 @@
 .topic-su-post-button a {
   color: #ffffff;
 }
+
 .su-column {
-margin: 5px !important;
+  margin: 5px !important;
 }
 
 .resource-su-post,
 .su-box {
-background: rgba(255, 255, 255,0.75);
-border: 1px solid #cccccc;
-border-radius: 15px;
-margin: 10px 0;
-padding: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #cccccc;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 10px;
 }
+
 .su-box-content,
 .su-box-title {
-background-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.su-cafe-thumb img {
+  max-width: 100%;
+}
+
+.su-carousel {
+  max-width: 1000px;
+}
+
+.feature-su-posts-loop {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.feature-su-posts-loop .feature-su-post {
+  flex: 1;
+  max-width: 30%;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.feature-su-posts-loop .feature-su-post img {
+  max-height: 200px;
+  max-width: 275px;
 }

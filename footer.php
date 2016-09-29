@@ -1,5 +1,9 @@
 </section>
-<?php dynamic_sidebar('sotm_widget'); ?>
+
+<?php
+// Only display if NOT homepage
+(is_front_page()) ?: dynamic_sidebar("sotm_widget") ;
+?>
 <footer>
 
 

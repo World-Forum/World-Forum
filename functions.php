@@ -170,7 +170,12 @@ function themeslug_theme_customizer( $wp_customize ) {
 
 		/* Register our sidebars and widgetized areas. */
 		function arphabet_widgets_init() {
-
+			register_sidebar( array(
+				'name'          => 'Top Bar',
+				'id'            => 'top_bar',
+				'before_widget' => '<div class="top_bar_widget">',
+				'after_widget'  => '</div>',
+			) );
 			register_sidebar( array(
 				'name'          => 'Homepage Banner',
 				'id'            => 'homepage_banner',

@@ -9,14 +9,9 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-  <?php wp_nav_menu( array(
-    'menu' => 'TopNav',
-    'container' => 'nav',
-    'container_id' => 'top-nav-container',
-    'menu_class' => 'top-nav-menu no-padding-start',
-    'theme_location' => 'top-nav',
-    'depth' => 2) ); ?>
+  <div id="top_bar">
+    <?php dynamic_sidebar('top_bar'); ?>
+  </div>
   <header>
     <?php wp_nav_menu( array(
       'menu' => 'Primary Nav',
