@@ -248,7 +248,7 @@ aside {
 }
 
 #sidebar-ancestor-nav {
-  display: flex;
+
   flex-direction: column;
 }
 
@@ -369,7 +369,6 @@ div.aligncenter {
 }
 
 img {
-  height: 100%;
 }
 
 a img.alignright {
