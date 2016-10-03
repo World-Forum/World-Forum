@@ -1,10 +1,12 @@
 <?php
-get_header();
+$blog_id = get_current_blog_id();
+
+ ( ( $blog_id == 1 ) && ( is_front_page() ) ) ? get_header('wff-home') : get_header();
 $wff_options = get_option( 'wff_theme_options' );
 ?>
 <main id="front-page">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <?php if ( get_the_excerpt())  { ?> 
+    <?php if ( get_the_excerpt())  { ?>
       <div id="homepage-excerpt-bg" class="primary-color-bg"></div>
       <div id="homepage-excerpt" >
         <?php the_excerpt(); ?>

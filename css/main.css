@@ -16,7 +16,6 @@ nav ul {
   list-style: none;
 }
 
-
 nav ul li a {
   font-weight: normal;
   padding: 10px;
@@ -26,12 +25,23 @@ nav ul li a {
 *      HEADER
 * -------------------------------
 */
-header {
+#default-header,
+#header-home {
   background: #054f7d;
   margin-top: 50px;
+  max-width: 1000px;
   overflow: visible;
+  position: fixed;
+  width: 100%;
   z-index: 10;
 }
+
+#header-home {
+  background: transparent;
+  position:absolute;
+}
+
+
 
 #top_bar {
   background: inherit;
@@ -79,6 +89,18 @@ header {
   margin: 0 10px;
 }
 
+#header-home .primary-nav-menu > li:not(:last-child) a {
+  color: #054f7d;
+}
+
+
+#header-home .primary-nav-menu > li:last-child a {
+  /* #054f7d in rgb */
+  background:rgba(5,79,125, 0.2)
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
 .primary-nav-menu li:hover a,
 .primary-nav-menu li.current_page_item a,
 .primary-nav-menu li.current-page-ancestor a {
@@ -118,7 +140,7 @@ nav ul li:hover .sub-menu {
 }
 
 .sub-menu li a {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: .7em;
   font-weight: normal;
   flex: 1;

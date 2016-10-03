@@ -12,7 +12,7 @@
   <div id="top_bar">
     <?php dynamic_sidebar('top_bar'); ?>
   </div>
-  <header id="default-header">
+  <header id="header-home">
     <?php wp_nav_menu( array(
       'menu' => 'Primary Nav',
       'container' => 'nav',

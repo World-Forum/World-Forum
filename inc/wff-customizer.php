@@ -212,8 +212,6 @@ $wp_customize->add_panel( 'homepage', array(
             color: <?php echo $primary_color; ?>;
           }
 
-          
-
           .sub-menu,
           .search-form input[type='submit'],
           .primary-color-bg{
@@ -221,12 +219,11 @@ $wp_customize->add_panel( 'homepage', array(
           }
 
           /*This is temporary*/
-          header{
+          #default-header {
             background: url('<?php echo $wff_options['header_bg_img']; ?>') no-repeat;
             height: 85px;
             margin-left: -5px;
             max-width: 1010px;
-            position: fixed;
             width: 100%;
           }
 
@@ -235,8 +232,6 @@ $wp_customize->add_panel( 'homepage', array(
             font-family: <?php echo $wff_options['homepage_header_font_type']; ?>;
             font-size:  <?php echo $wff_options['homepage_header_font_size']; ?>;
           }
-
-
 
           footer {
             background: url('<?php echo $wff_options['footer_bg_img']; ?>');
