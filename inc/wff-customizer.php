@@ -217,6 +217,10 @@ $wp_customize->add_panel( 'homepage', array(
           .primary-color-bg{
             background: <?php echo $primary_color; ?>;
           }
+          
+          .sub-menu::before {
+            border-bottom: 10px solid <?php echo $primary_color; ?>;
+          }
 
           /*This is temporary*/
           #default-header {

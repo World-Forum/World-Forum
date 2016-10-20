@@ -107,9 +107,20 @@ nav ul li a {
   font-weight: bold;
 }
 
+.sub-menu::before {
+  content: "\A";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #054f7d;
+  position: absolute;
+  left: 15px;
+  top: -10px;
+}
+
 .sub-menu {
   background: #054f7d;
   border-radius: 15px;
+  box-shadow: 2px 2px 5px #58585a;
   display: none;
   flex-direction: column;
   top: 45px;
