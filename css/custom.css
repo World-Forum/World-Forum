@@ -1,6 +1,11 @@
+/**
+* Focus Work Topics
+*/
+
 .topic-su-posts-default-loop {
   display: flex;
   flex-wrap: wrap;
+ justify-content: center;
 }
 
 .topic-su-post {
@@ -15,7 +20,8 @@
 
 .topic-su-post img {
   border-radius: 12px 12px 0 0;
-  width: 100%;
+height: 100%;
+width: 100%;
 }
 
 .topic-su-post-title {
@@ -51,6 +57,10 @@
   margin: 5px !important;
 }
 
+/**
+* Focus Work Resources
+*/
+
 .resource-su-post,
 .su-box {
   background: rgba(255, 255, 255, 0.75);
@@ -73,6 +83,9 @@
   max-width: 1000px;
 }
 
+/**
+* Connection Center Features
+*/
 .feature-su-posts-loop {
   display: flex;
   flex-direction: row;
@@ -88,6 +101,5 @@
 }
 
 .feature-su-posts-loop .feature-su-post img {
-  max-height: 200px;
-  max-width: 275px;
+
 }
