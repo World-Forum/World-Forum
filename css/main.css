@@ -520,3 +520,21 @@ a img.aligncenter {
 *      MEDIA QUERIES
 * ---------------------------------------
 */
+
+@media screen and (max-width: 760px) {
+  section {
+    flex-direction: column-reverse;
+  }
+  aside {
+    background: rgba(255,255,255,.75);
+    border-top: 1px solid #58585a;
+    max-width:none;
+    width: auto;
+  }
+
+  #sidebar-ancestor-nav li a  {
+    font-size: 1.4em;
+    padding: 15px 10px;
+    text-align: center;
+  }
+}
