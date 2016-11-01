@@ -2,6 +2,8 @@
 
 	// Add in Custom Theme Options
 require get_template_directory() . '/inc/wff-customizer.php';
+	// Add in Custom Metaboxes for the homepage
+require get_template_directory() . '/inc/wff-frontpage.php';
 
 /**
 * Add in the Style Sheets

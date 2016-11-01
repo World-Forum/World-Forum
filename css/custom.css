@@ -89,7 +89,6 @@ width: 100%;
 .feature-su-posts-loop {
   display: flex;
   flex-direction: row;
-  padding: 15px;
 }
 
 .feature-su-posts-loop .feature-su-post {

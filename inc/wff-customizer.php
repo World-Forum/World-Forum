@@ -159,6 +159,7 @@ $wp_customize->add_panel( 'homepage', array(
 
         $wp_customize->add_control('wff_homepage_left_bucket', array(
           'label'      => __('Homepage Left Bucket', 'wff'),
+          'description'  => __( 'Recommended Img Width: 300px' ),
           'section'  => 'homepage_buckets',
           'settings'   => 'wff_theme_options[homepage_left_bucket]',
           'type' => 'textarea',
@@ -173,6 +174,7 @@ $wp_customize->add_panel( 'homepage', array(
 
         $wp_customize->add_control('wff_homepage_middle_bucket', array(
           'label'      => __('Homepage Middle Bucket', 'wff'),
+      'description'  => __( 'Recommended Img Width: 300px' ),
           'section'  => 'homepage_buckets',
           'settings'   => 'wff_theme_options[homepage_middle_bucket]',
           'type' => 'textarea',
@@ -187,6 +189,7 @@ $wp_customize->add_panel( 'homepage', array(
 
         $wp_customize->add_control('wff_homepage_right_bucket', array(
           'label'      => __('Homepage Right Bucket', 'wff'),
+      'description'  => __( 'Recommended Img Width: 300px' ),
           'section'  => 'homepage_buckets',
           'settings'   => 'wff_theme_options[homepage_right_bucket]',
           'type' => 'textarea',
@@ -217,7 +220,7 @@ $wp_customize->add_panel( 'homepage', array(
           .primary-color-bg{
             background: <?php echo $primary_color; ?>;
           }
-          
+
           .sub-menu::before {
             border-bottom: 10px solid <?php echo $primary_color; ?>;
           }
