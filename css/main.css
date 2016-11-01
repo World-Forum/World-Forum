@@ -537,4 +537,11 @@ a img.aligncenter {
     padding: 15px 10px;
     text-align: center;
   }
+  #widget-sotm {
+    justify-content: center;
+    margin-top: 150px;
+    width: 90%;
+
+  }
+
 }
