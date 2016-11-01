@@ -522,8 +522,14 @@ a img.aligncenter {
 */
 
 @media screen and (max-width: 760px) {
+  header,
+  #top_bar {
+    display: none;
+  }
+
   section {
     flex-direction: column-reverse;
+    padding-top: initial;
   }
   aside {
     background: rgba(255,255,255,.75);
