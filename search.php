@@ -1,38 +1,64 @@
+<?php
+/*
+Template Name: Search Page
+*/
+?>
 <?php get_header(); ?>
 
-<main id="full-page-container">
-  <?php
-  global $wp_query;
-  $total_results = $wp_query->found_posts;
+<div class="page-container background-white">
+	<div class="column span-9 first" id="maincontent">
+		<div class="full-page-content">
 
-  ?>
-
-  <h1>Search Results</h1>
-  <p><strong>Total Results Found:</strong> <?php echo $total_results; ?> </p>
-  <?php get_search_form(); ?>
-  <hr />
-
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <article class="blog-post">
-      <h3 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-      <?php the_excerpt(); ?>
-    </article>
-    <hr />
-
-  <?php endwhile; else : ?>
-
-    <p>
-      <?php _e( 'Sorry, There is nothing to display. '); ?>
-    </p>
-  <?php endif; ?>
-  <?php the_posts_pagination(
-  array(
-    'screen_reader_text' => __( 'More Results ' ),
-    )
-  ); ?>
-
-
-</main>
+			<?php if (have_posts()) : ?>
+				<h2 class="pagetitle">Search Results for "<?php echo $s ?>"</h2>
+				<div class="navigation">
+					<div class="alignleft">
+						<?php next_posts_link('&laquo; Previous') ?>
+					</div>
+					<div class="alignright">
+						<?php previous_posts_link('Next &raquo;') ?>
+					</div>
+				</div>
+				<br /><br />
+				<?php while (have_posts()) : the_post(); ?>
+					<div class="post" id="post-<?php the_ID(); ?>">
+						<p class="large nomargin"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+							<h3> <?php the_title(); ?> </h3>
+						</a></p>
+						<?php
+						// Support for "Search Excerpt" plugin
+						// http://fucoder.com/code/search-excerpt/
+						if ( function_exists('the_excerpt') && is_search() ) {
+							the_excerpt();
+						} ?>
+						<p><small>
+							<i><?php the_time('F jS, Y') ?></i>
+							&nbsp;|&nbsp;
+							<!-- by <?php the_author() ?> -->
+							Published in
+							<?php the_category(', ');  ?>
+						</small> </p>
+					</div>
+					<hr>
+				<?php endwhile; ?>
+				<div class="navigation">
+					<div class="alignleft">
+						<?php next_posts_link('&laquo; Previous') ?>
+					</div>
+					<div class="alignright">
+						<?php previous_posts_link('Next &raquo;') ?>
+					</div>
+				</div>
+			<?php else : ?>
+				<h2 class="center">No posts found. Try a different search?</h2>
+				<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+			<?php endif; ?>
+		</div>
+		<!-- /content -->
+	</div>
+	<!-- /maincontent-->
+	<?php dynamic_sidebar( 'sotm_widget' ); ?>
+</div>
+<!-- /page -->
 
 <?php get_footer(); ?>

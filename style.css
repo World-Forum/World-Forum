@@ -1,17 +1,15 @@
-/**
-* Theme Name: World Forum Foundation
-* Theme URI: https://worldforumfoundation.org
-* Author: Dimensions Educational Research Foundation
-* Author URI: https://dimensionsfoundation.org/
-* Description: Theme built for World Forum Foundaiton
-* License: GNU General Public License v2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
-* Tags:
-* Text Domain: world-forum-foundation
-* Version: 3.2.0
-* Updated On: Sept 28, 2016
-* Updated By: Michael Kracke
+
+/*
+Theme Name: World Forum Foundation
+Theme URI: http://worldforumfoundation.org
+Description: Theme built by Dimensions Educational Research Foundation for the World Forum
+Version: 2.2.5
+Author: Michael Kracke
+Author URI: http://dimensionsfoundation.org
+Tags: one, two
 */
+
+
 
 /* Color Palette
 *                  Hex   |     RGB
@@ -23,4 +21,8 @@
 * Green, Medium: #37baa5 | 55,186,165
 * Green, Light:  #b6bdb1 | 182,219,209
 * Gray:          #58585a | 88,88,90
+*/
+
+/*
+*     Load Fonts
 */
