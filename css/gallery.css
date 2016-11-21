@@ -19,9 +19,9 @@ div.aligncenter {
 }
 
 img {
-	max-width: 100%;
-	max-height: 100%;
-	height: 100%;
+max-width: 100%;
+    max-height: 100%;
+    height: 100%;
 }
 
 a img.alignright {
@@ -85,7 +85,7 @@ a img.aligncenter {
 
 .gallery {
 	margin-bottom: 1.6em;
-	text-align: center;
+text-align: center;
 }
 
 .gallery-item {
@@ -147,7 +147,7 @@ a img.aligncenter {
 
 
 .gallery-columns-3 .gallery-item {
-	padding: 0;
+padding: 0;
 }
 
 
@@ -160,13 +160,13 @@ a img.aligncenter {
 
 
 .homepage-sponsors {
-	padding: 0 8% 0;
+padding: 0 8% 0;
 }
 
 .homepage-sponsors .gallery .gallery-item {
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	-webkit-margin-start: 10px;
+	    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 10px;
 	-webkit-margin-end: 50px;
 
 	padding: 0.5%;

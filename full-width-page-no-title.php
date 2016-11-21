@@ -1,4 +1,4 @@
-<?php get_header();
+<?php get_header(); 
 
 /* Template Name: Full Width Page no Title */
 
@@ -7,12 +7,12 @@ if (have_posts()) :
 <?php endwhile; endif; ?>
 <div class="page-container background-white">
 
-	<div class="full-page-content">
-		<p><br /></p>
+  <div class="full-page-content">
+  <p><br /></p>
 
-		<?php the_content(); ?>
-
-	</div>
-	<?php dynamic_sidebar( 'sotm_widget' ); ?>
+    <?php the_content(); ?>
+      
+  </div>
+<?php dynamic_sidebar( 'sotm_widget' ); ?>
 </div>
 <?php get_footer(); ?>
