@@ -1,16 +1,17 @@
 <?php
 
+	// Add in Custom Theme Options
+require get_template_directory() . '/inc/wff-customizer.php';
+
 /**
 * Add in the Style Sheets
 */
 function wff_theme_styles() {
-
-	wp_enqueue_style( 'the_css', get_template_directory_uri() . '/css/main.css' );
-	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.css' );
-	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.css' );
-	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.css' );
-	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.css' );
+	wp_enqueue_style( 'style_css', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.min.css' );
+	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/main.min.css' );
+	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.min.css' );
+	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'wff_theme_styles');
 
@@ -41,7 +42,7 @@ function run_activate_plugin( $plugin ) {
 }
 
 /* Add style to visual editor */
-add_editor_style('/css/fonts.css');
+add_editor_style('/css/fonts.min.css');
 
 // Custom Background
 add_theme_support( 'custom-background' );
@@ -179,7 +180,7 @@ function themeslug_theme_customizer( $wp_customize ) {
 			register_sidebar( array(
 				'name'          => 'Sponsor of the Month',
 				'id'            => 'sotm_widget',
-				'before_widget' => '<div class="sotm">',
+				'before_widget' => '<div id="widget-sotm">',
 				'after_widget'  => '</div>',
 			) );
 			register_sidebar( array(
@@ -284,7 +285,7 @@ function themeslug_theme_customizer( $wp_customize ) {
 			register_nav_menus(array( 'primary-nav' => __( 'Primary Menu'),
 			'social-nav' => __('Social Media Menu'),
 			'footer-nav' => __('Footer Menu'),
-			'sidebar-nav' => __('Sidebar Menu')
+			'top-nav' => __('Top Menu')
 		));
 		// Add featured image support
 		add_theme_support('post-thumbnails');
