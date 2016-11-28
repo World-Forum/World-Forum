@@ -116,15 +116,19 @@ in this network
 /*--------------- Topic Posts ---------------*/
 
 .topic-su-posts {
-	display : inline-block;
+	display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .topic-su-post {
-	width         : 200px;
-	float         : left;
-	margin        : 20px 5px 10px;
-	border-radius : 12px 12px 8px 8px;
-	background    : #b6dbd1;
+	flex: 1 200px;
+    display: flex;
+    float: left;
+    margin: 20px 5px 10px;
+    border-radius: 12px 12px 8px 8px;
+    flex-direction: column;
+    background: #b6dbd1;
 }
 
 .topic-su-posts-default-loop .topic-su-post-title {
