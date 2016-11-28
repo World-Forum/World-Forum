@@ -614,8 +614,8 @@ a.long-text-button span {
 */
 .site-footer {
 	clear: both;
-	height: 75px;
-	margin-top: -5px;
+	display: flex;
+	flex-direction: column;
 	width: 1000px;
 }
 
@@ -641,7 +641,7 @@ a.long-text-button span {
 	color: #fff;
 	float: left;
 	font-size: 10px;
-	padding-top: 10px;
+	padding: 10px 0;
 	text-align: center;
 }
 
@@ -655,6 +655,7 @@ a.long-text-button span {
 	display: -ms-inline-flexbox;
 	display: -webkit-inline-flex;
 	float: left;
+	margin-bottom: 0;
 	position: relative;
 }
 
