@@ -72,8 +72,7 @@ Header
 
 /* Top Float Bar */
 .top-float-bar {
-	display: inline-block;
-	float: right;
+	display: flex;
 	margin-top: -10px;
 	max-width: 1000px;
 	padding: 10px 0 10px;
@@ -82,9 +81,29 @@ Header
 	z-index: 10;
 }
 
-.search-bar {
-	float: right;
-	margin-right: 15px;
+.search-bar,
+#top-nav-container {
+	display: flex;
+	flex:1;
+	justify-content: flex-end;
+}
+#top-nav-container {
+	flex: initial;
+}
+
+#top-nav-container ul {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+#top-nav-container ul  li a {
+	padding: 10px 5px;
 }
 
 #search {
@@ -134,7 +153,7 @@ div.review-form {
 }
 
 .primary-nav-item-list li:hover a {
-	text-decoration: underline;
+	color: #054f7d;
 }
 
 .primary-nav-item-list li ul.sub-menu {
@@ -169,6 +188,7 @@ div.review-form {
 	border-bottom: 10px solid  #0f746b;
 }
 
+
 .wff-color li ul.sub-menu {
 	background-color: #054f7d;
 }
@@ -181,7 +201,9 @@ div.review-form {
 	opacity: 1;
 	visibility: visible;
 	z-index: 1000;
+
 }
+
 
 .primary-nav-item-list li .sub-menu:first-child:hover a {
 	border-radius: 5px 5px  0 0 ;
@@ -195,7 +217,6 @@ div.review-form {
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: normal;
-	text-decoration: none;
 }
 
 .wff-color li ul.sub-menu li:hover {
@@ -204,6 +225,9 @@ div.review-form {
 
 .wfcc-color li ul.sub-menu li:hover {
 	background-color: #37baa5;
+}
+
+.primary-nav-item-list li ul.sub-menu li:hover a {
 }
 
 .interior-nav a {
@@ -298,7 +322,7 @@ a.long-text-button span {
 
 .page-container {
 	display: inline-block;
-	margin-top: 65px;
+	margin-top: 25px;
 	max-width: 1000px;
 	width: 100%;
 }
