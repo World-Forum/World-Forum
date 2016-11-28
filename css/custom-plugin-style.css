@@ -1,12 +1,12 @@
 /*
-	* Plugin Custom CSS
-				* -----------------
-				* This CSS file
-	contains
-		custom
-			styling that is for any and all plugins found
-				in this network
-				*
+* Plugin Custom CSS
+* -----------------
+* This CSS file
+contains
+custom
+styling that is for any and all plugins found
+in this network
+*
 */
 
 .su-column {
@@ -226,7 +226,15 @@
 /*IoR Projects Gallery*/
 
 .su-project-posts-loop {
-	display : inline-block;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.su-project-posts-loop  a {
+	flex: 1 275px;
+	justify-content: center;
+
+	display: flex;
 }
 
 .su-project-post {
@@ -247,404 +255,404 @@
 
 .su-project-posts-loop .su-project-post .su-projects-post-excerpt {}
 
-.su-project-posts-loop .su-project-post .su-projects-post-excerpt p {
-	-webkit-margin-before : 0;
-	-webkit-margin-after  : 0;
-	text-align            : center;
-	font-size             : 10pt;
-}
-
-.ior-featured-img {
-	text-align : center;
-}
-
-.ior-featured-img img {
-	margin        : 15px 0 15px;
-	border        : 1px solid #58585a;
-	border-radius : 0;
-}
-
-/*Global Cafe Loop*/
-
-.su-cafe-posts-loop {}
-
-.su-cafe-post {
-	display : inline-block;
-	width   : 100%;
-}
-
-.su-cafe-thumb {
-	max-width   : 275px;
-	height      : 100%;
-	float       : left;
-	padding-top : 30px;
-}
-
-.su-cafe-thumb img {
-	width         : 90%;
-	height        : 90%;
-	border-radius : 5px;
-}
-
-.su-cafe-post-excerpt {
-	max-width : 375px;
-	float     : right;
-}
-
-/*--------------- Focused Work Resource & News Box ---------------*/
-
-.resource-su-post {
-	margin-bottom         : 10px;
-	padding               : 10px;
-	border                : 2px solid rgba(88,88,90,0.3) !important;
-	-moz-border-radius    : 12px;
-	-webkit-border-radius : 12px;
-	border-radius         : 12px;
-	background-color      : rgba(255,255,255,0.25);
-	font-size             : 12pt;
-}
-
-/*--------------- WP-Members ---------------*/
-
-.button_div,
-.link-text {
-	text-align : left !important;
-}
-
-div.link-text {
-	display     : none !important;
-	margin-top  : 5px !important;
-	font-weight : bold !important;
-}
-
-div.link-text a {
-	font-weight : normal !important;
-}
-
-input#rememberme {
-	width : 25px !important;
-}
-
-input.buttons {
-	width : 100%;
-}
-
-/*--------------- Forums ---------------*/
-
-.subscription-toggle {
-	float      : right;
-	margin-top : 12px;
-}
-
-.button {
-	color         : inherit;
-	border-radius : 12px;
-}
-
-/** BuddyPress*/
-
-/** BuddyPress - Forums*/
-
-#bbpress-forums div.bbp-forum-header,
-#bbpress-forums div.bbp-reply-header,
-#bbpress-forums div.bbp-topic-header {
-	color      : #FFFFFF;
-	background : rgba(15,116,107,0.6);
-}
-
-#bbpress-forums li.bbp-footer,
-#bbpress-forums li.bbp-header {
-	color      : #FFFFFF;
-	background : rgba(15,116,107,0.8);
-}
-
-#bbpress-forums span.bbp-admin-links a {
-	color : #FFFFFF;
-}
-
-#bbpress-forums div.odd,
-#bbpress-forums ul.odd {
-	background : rgba(15,116,107,0.1);
-}
-
-#bbpress-forums div.even,
-#bbpress-forums ul.even {
-	background : rgba(15,116,107,0.2);
-}
-
-#bbpress-forums .bbp-reply-form,
-#bbpress-forums .bbp-topic-form {
-	background : rgba(15,116,107,0.3);
-}
-
-#bbpress-forums fieldset.bbp-form {
-	border : 0;
-}
-
-#bbpress-forums fieldset.bbp-form legend {
-	font-size   : 15pt;
-	font-weight : bold;
-}
-
-/*BuddyPress - Members Loop*/
-
-ul.item-list li {
-	display : inline-block !important;
-}
-
-/** BuddyPress Changes*/
-
-div.item-list-tabs ul li {
-	padding-right : 5px;
-	border-right  : 1px solid;
-	font-size     : 14px;
-}
-
-#bbp_reply_submit,
-#bbp_search_submit,
-#bbp_topic_submit {
-	padding          : 5px;
-	color            : #FFFFFF;
-	border           : none;
-	border-radius    : 12px;
-	background-color : rgba(15,116,107,0.8);
-	font-size        : inherit;
-}
-
-.bbp-reply-header a.bbp-reply-permalink {
-	display : none !important;
-}
-
-div.link-text {}
-
-/** BuddyPress - Member - Profile*/
-
-#item-header-avatar {
-	float        : left;
-	margin-right : 15px;
-}
-
-#item-body,
-#item-ul li {
-	background : rgba(55,186,165,0.3);
-}
-
-#bp-browse-button,
-#subnav ul li,
-.activity-meta a,
-.avatar-nav-items li,
-.load-more a,
-.submit input {
-	background : rgba(255,255,255,0.5);
-}
-
-#bp-browse-button,
-.activity-meta a,
-.load-more a,
-.submit input {
-	margin-left   : 10px;
-	padding       : 5px 10px 5px;
-	border        : none;
-	border-radius : 12px;
-}
-
-.load-more {
-	margin-top : 20px;
-	border     : none !important;
-}
-
-#item-body {
-	width         : 90%;
-	margin        : 50px auto;
-	padding       : 15px;
-	border-radius : 2px;
-}
-
-#item-ul,
-#subnav ul {
-	display      : inline-block;
-	padding-left : 0;
-}
-
-#item-ul li,
-#subnav ul li {
-	float         : left;
-	margin        : 0 5px 0;
-	padding       : 5px 10px 5px;
-	border        : none;
-	border-radius : 12px;
-	list-style    : none;
-}
-
-#send-private-message a {
-	padding       : 2px 5px 2px;
-	border        : 1px solid #58585a;
-	border-radius : 12px;
-	font-weight   : bold;
-}
-
-.drag-drop-inside p {
-	color : #58585a !important;
-}
-
-#bp-browse-button.bp-browse-button {
-	clear : both !important;
-}
-
-.field_type_textbox td {
-	padding : 0 5px 0;
-}
-
-.radio li {
-	list-style : none;
-}
-
-label {
-	font-weight : bold;
-}
-
-#message_content {
-	width : 99%;
-}
-
-/** BuddyPress - Profile - Activity Stream*/
-
-#activity-stream {
-	padding-left : 10px;
-}
-
-#activity-stream li {
-	width         : 97.5%;
-	padding       : 15px 5px 15px;
-	border-bottom : 1px solid #58585a;
-}
-
-/** BuddyPress - Member - Directory*/
-
-#members-directory-form h3 {
-	font-family : BreeSerif;
-	font-size   : 18pt;
-	font-weight : bold;
-}
-
-#members-all {
-	list-style : none;
-}
-
-#members-all a {
-	padding       : 5px;
-	color         : white;
-	border-radius : 12px;
-	background    : rgba(15,116,107,0.8);
-}
-
-#members-dir-list {
-	display      : inline-block;
-	padding-left : 0;
-}
-
-#members-dir-list li {
-	float      : left;
-	margin     : 7px;
-	list-style : none;
-}
-
-div.item-list-tabs ul li {
-	border : 0;
-}
-
-.item-avatar {
-	width  : 150px;
-	height : 150px;
-}
-
-.item-title {
-	width      : 150px;
-	text-align : center;
-}
-
-/** BuddyPress - Member - Hide Nav Items*/
-
-#activity-groups-personal-li,
-#blogs-personal-li,
-#forums-personal-li,
-#groups-personal-li,
-#post-mention,
-#settings-personal-li,
-.activity-comments,
-.activity-meta .acomment-reply,
-.field-visibility-settings-notoggle {
-	display : none !important;
-}
-
-.profile-fields {
-	background : rgba(255,255,255,0.4);
-}
-
-/** WP-Member - Login*/
-
-#wpmem_ul_search {
-	width : 100% !important;
-}
-
-.avatar img {
-	width      : 100% !important;
-	max-width  : 100px;
-	height     : 100% !important;
-	max-height : 100px;
-}
-
-#wpmem-ul-list .wpmem-ul-user-odd,
-#wpmem_ul_search .div_select,
-#wpmem_ul_search .div_text,
-#wpmem_ul_search fieldset {
-	background : rgba(15,116,107,0.20) !important;
-}
-
-/*Use <legend> style*/
-
-.wpua-edit-container h3 {
-	font-size   : 22pt;
-	font-weight : bold;
-}
-
-.button_div input.buttons,
-.submit input.button {
-	width         : 33% !important;
-	margin        : 5px;
-	padding       : 10px 20px 10px;
-	color         : #ffffff;
-	border        : 0;
-	border-radius : 12px;
-	background    : #0f746b;
-}
-
-#wpmem_login form fieldset,
-#wpmem_reg form fieldset {
-	border : 0;
-}
-
-#wpmem_login form fieldset legend,
-#wpmem_reg form fieldset legend {
-	font-size   : 22pt;
-	font-weight : bold;
-}
-
-#wpmem_login form fieldset .div_text input,
-#wpmem_reg form fieldset .div_text input {
-	width : 250px;
-}
-
-#wpmem_login form fieldset .button_div input,
-#wpmem_reg form fieldset .button_div input {
-	width : 100px;
-}
-
-.div_text img {
-	float        : left;
-	margin-right : 15px;
-}
-
-.button_div {
-	margin-top : 15px;
-}
+	.su-project-posts-loop .su-project-post .su-projects-post-excerpt p {
+		-webkit-margin-before : 0;
+		-webkit-margin-after  : 0;
+		text-align            : center;
+		font-size             : 10pt;
+	}
+
+	.ior-featured-img {
+		text-align : center;
+	}
+
+	.ior-featured-img img {
+		margin        : 15px 0 15px;
+		border        : 1px solid #58585a;
+		border-radius : 0;
+	}
+
+	/*Global Cafe Loop*/
+
+	.su-cafe-posts-loop {}
+
+		.su-cafe-post {
+			display : inline-block;
+			width   : 100%;
+		}
+
+		.su-cafe-thumb {
+			max-width   : 275px;
+			height      : 100%;
+			float       : left;
+			padding-top : 30px;
+		}
+
+		.su-cafe-thumb img {
+			width         : 90%;
+			height        : 90%;
+			border-radius : 5px;
+		}
+
+		.su-cafe-post-excerpt {
+			max-width : 375px;
+			float     : right;
+		}
+
+		/*--------------- Focused Work Resource & News Box ---------------*/
+
+		.resource-su-post {
+			margin-bottom         : 10px;
+			padding               : 10px;
+			border                : 2px solid rgba(88,88,90,0.3) !important;
+			-moz-border-radius    : 12px;
+			-webkit-border-radius : 12px;
+			border-radius         : 12px;
+			background-color      : rgba(255,255,255,0.25);
+			font-size             : 12pt;
+		}
+
+		/*--------------- WP-Members ---------------*/
+
+		.button_div,
+		.link-text {
+			text-align : left !important;
+		}
+
+		div.link-text {
+			display     : none !important;
+			margin-top  : 5px !important;
+			font-weight : bold !important;
+		}
+
+		div.link-text a {
+			font-weight : normal !important;
+		}
+
+		input#rememberme {
+			width : 25px !important;
+		}
+
+		input.buttons {
+			width : 100%;
+		}
+
+		/*--------------- Forums ---------------*/
+
+		.subscription-toggle {
+			float      : right;
+			margin-top : 12px;
+		}
+
+		.button {
+			color         : inherit;
+			border-radius : 12px;
+		}
+
+		/** BuddyPress*/
+
+		/** BuddyPress - Forums*/
+
+		#bbpress-forums div.bbp-forum-header,
+		#bbpress-forums div.bbp-reply-header,
+		#bbpress-forums div.bbp-topic-header {
+			color      : #FFFFFF;
+			background : rgba(15,116,107,0.6);
+		}
+
+		#bbpress-forums li.bbp-footer,
+		#bbpress-forums li.bbp-header {
+			color      : #FFFFFF;
+			background : rgba(15,116,107,0.8);
+		}
+
+		#bbpress-forums span.bbp-admin-links a {
+			color : #FFFFFF;
+		}
+
+		#bbpress-forums div.odd,
+		#bbpress-forums ul.odd {
+			background : rgba(15,116,107,0.1);
+		}
+
+		#bbpress-forums div.even,
+		#bbpress-forums ul.even {
+			background : rgba(15,116,107,0.2);
+		}
+
+		#bbpress-forums .bbp-reply-form,
+		#bbpress-forums .bbp-topic-form {
+			background : rgba(15,116,107,0.3);
+		}
+
+		#bbpress-forums fieldset.bbp-form {
+			border : 0;
+		}
+
+		#bbpress-forums fieldset.bbp-form legend {
+			font-size   : 15pt;
+			font-weight : bold;
+		}
+
+		/*BuddyPress - Members Loop*/
+
+		ul.item-list li {
+			display : inline-block !important;
+		}
+
+		/** BuddyPress Changes*/
+
+		div.item-list-tabs ul li {
+			padding-right : 5px;
+			border-right  : 1px solid;
+			font-size     : 14px;
+		}
+
+		#bbp_reply_submit,
+		#bbp_search_submit,
+		#bbp_topic_submit {
+			padding          : 5px;
+			color            : #FFFFFF;
+			border           : none;
+			border-radius    : 12px;
+			background-color : rgba(15,116,107,0.8);
+			font-size        : inherit;
+		}
+
+		.bbp-reply-header a.bbp-reply-permalink {
+			display : none !important;
+		}
+
+		div.link-text {}
+
+			/** BuddyPress - Member - Profile*/
+
+			#item-header-avatar {
+				float        : left;
+				margin-right : 15px;
+			}
+
+			#item-body,
+			#item-ul li {
+				background : rgba(55,186,165,0.3);
+			}
+
+			#bp-browse-button,
+			#subnav ul li,
+			.activity-meta a,
+			.avatar-nav-items li,
+			.load-more a,
+			.submit input {
+				background : rgba(255,255,255,0.5);
+			}
+
+			#bp-browse-button,
+			.activity-meta a,
+			.load-more a,
+			.submit input {
+				margin-left   : 10px;
+				padding       : 5px 10px 5px;
+				border        : none;
+				border-radius : 12px;
+			}
+
+			.load-more {
+				margin-top : 20px;
+				border     : none !important;
+			}
+
+			#item-body {
+				width         : 90%;
+				margin        : 50px auto;
+				padding       : 15px;
+				border-radius : 2px;
+			}
+
+			#item-ul,
+			#subnav ul {
+				display      : inline-block;
+				padding-left : 0;
+			}
+
+			#item-ul li,
+			#subnav ul li {
+				float         : left;
+				margin        : 0 5px 0;
+				padding       : 5px 10px 5px;
+				border        : none;
+				border-radius : 12px;
+				list-style    : none;
+			}
+
+			#send-private-message a {
+				padding       : 2px 5px 2px;
+				border        : 1px solid #58585a;
+				border-radius : 12px;
+				font-weight   : bold;
+			}
+
+			.drag-drop-inside p {
+				color : #58585a !important;
+			}
+
+			#bp-browse-button.bp-browse-button {
+				clear : both !important;
+			}
+
+			.field_type_textbox td {
+				padding : 0 5px 0;
+			}
+
+			.radio li {
+				list-style : none;
+			}
+
+			label {
+				font-weight : bold;
+			}
+
+			#message_content {
+				width : 99%;
+			}
+
+			/** BuddyPress - Profile - Activity Stream*/
+
+			#activity-stream {
+				padding-left : 10px;
+			}
+
+			#activity-stream li {
+				width         : 97.5%;
+				padding       : 15px 5px 15px;
+				border-bottom : 1px solid #58585a;
+			}
+
+			/** BuddyPress - Member - Directory*/
+
+			#members-directory-form h3 {
+				font-family : BreeSerif;
+				font-size   : 18pt;
+				font-weight : bold;
+			}
+
+			#members-all {
+				list-style : none;
+			}
+
+			#members-all a {
+				padding       : 5px;
+				color         : white;
+				border-radius : 12px;
+				background    : rgba(15,116,107,0.8);
+			}
+
+			#members-dir-list {
+				display      : inline-block;
+				padding-left : 0;
+			}
+
+			#members-dir-list li {
+				float      : left;
+				margin     : 7px;
+				list-style : none;
+			}
+
+			div.item-list-tabs ul li {
+				border : 0;
+			}
+
+			.item-avatar {
+				width  : 150px;
+				height : 150px;
+			}
+
+			.item-title {
+				width      : 150px;
+				text-align : center;
+			}
+
+			/** BuddyPress - Member - Hide Nav Items*/
+
+			#activity-groups-personal-li,
+			#blogs-personal-li,
+			#forums-personal-li,
+			#groups-personal-li,
+			#post-mention,
+			#settings-personal-li,
+			.activity-comments,
+			.activity-meta .acomment-reply,
+			.field-visibility-settings-notoggle {
+				display : none !important;
+			}
+
+			.profile-fields {
+				background : rgba(255,255,255,0.4);
+			}
+
+			/** WP-Member - Login*/
+
+			#wpmem_ul_search {
+				width : 100% !important;
+			}
+
+			.avatar img {
+				width      : 100% !important;
+				max-width  : 100px;
+				height     : 100% !important;
+				max-height : 100px;
+			}
+
+			#wpmem-ul-list .wpmem-ul-user-odd,
+			#wpmem_ul_search .div_select,
+			#wpmem_ul_search .div_text,
+			#wpmem_ul_search fieldset {
+				background : rgba(15,116,107,0.20) !important;
+			}
+
+			/*Use <legend> style*/
+
+			.wpua-edit-container h3 {
+				font-size   : 22pt;
+				font-weight : bold;
+			}
+
+			.button_div input.buttons,
+			.submit input.button {
+				width         : 33% !important;
+				margin        : 5px;
+				padding       : 10px 20px 10px;
+				color         : #ffffff;
+				border        : 0;
+				border-radius : 12px;
+				background    : #0f746b;
+			}
+
+			#wpmem_login form fieldset,
+			#wpmem_reg form fieldset {
+				border : 0;
+			}
+
+			#wpmem_login form fieldset legend,
+			#wpmem_reg form fieldset legend {
+				font-size   : 22pt;
+				font-weight : bold;
+			}
+
+			#wpmem_login form fieldset .div_text input,
+			#wpmem_reg form fieldset .div_text input {
+				width : 250px;
+			}
+
+			#wpmem_login form fieldset .button_div input,
+			#wpmem_reg form fieldset .button_div input {
+				width : 100px;
+			}
+
+			.div_text img {
+				float        : left;
+				margin-right : 15px;
+			}
+
+			.button_div {
+				margin-top : 15px;
+			}

@@ -5,7 +5,7 @@
 */
 function wff_theme_styles() {
 
-wp_enqueue_style( 'the_css', get_template_directory_uri() . '/css/main.css' );
+	wp_enqueue_style( 'the_css', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.css' );
 	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.css' );
@@ -282,115 +282,115 @@ function themeslug_theme_customizer( $wp_customize ) {
 
 			/* Site Navigation - Menu */
 			register_nav_menus(array(
-			'top-nav' => __( 'Top Menu'),
-			'primary-nav' => __( 'Primary Menu'),
-			'social-nav' => __('Social Media Menu'),
-			'footer-nav' => __('Footer Menu'),
-			'sidebar-nav' => __('Sidebar Menu')
-		));
-		// Add featured image support
-		add_theme_support('post-thumbnails');
+				'top-nav' => __( 'Top Menu'),
+				'primary-nav' => __( 'Primary Menu'),
+				'social-nav' => __('Social Media Menu'),
+				'footer-nav' => __('Footer Menu'),
+				'sidebar-nav' => __('Sidebar Menu')
+			));
+			// Add featured image support
+			add_theme_support('post-thumbnails');
 
-	}
-
-	add_action('after_setup_theme', 'wp_theme_setup');
-	add_image_size( 'sponsor-thumbnail', 75 );
-
-
-
-
-
-	// Default admin bar to hidden
-	add_action("user_register", "set_user_admin_bar_false_by_default", 10, 1);
-	function set_user_admin_bar_false_by_default($user_id) {
-		update_user_meta( $user_id, 'show_admin_bar_front', 'false' );
-		update_user_meta( $user_id, 'show_admin_bar_admin', 'false' );
-	}
-
-
-
-	/** Add a new default avatar **/
-	add_filter( 'avatar_defaults', 'add_gravatar' );
-
-	function add_gravatar ($avatar_defaults) {
-		$myavatar = get_bloginfo('template_directory') . '/images/wff-avatar.jpg';
-		$avatar_defaults[$myavatar] = "WFF_Avatar";
-		return $avatar_defaults;
-	}
-	// BuddyPress Functions
-	add_theme_support( 'buddypress' );
-
-
-	// Only return one entry for revision log otherwise it gets cluttered
-	function bbp_trim_revision_log( $r='' ) {
-		$arr = array( end( $r ));
-		reset( $r );
-
-		return( $arr );
-	}
-
-	add_filter( 'bbp_get_reply_revisions', 'bbp_trim_revision_log', 20, 1 );
-	add_filter( 'bbp_get_topic_revisions', 'bbp_trim_revision_log', 20, 1 );
-
-
-	function remove_counts() {
-		$args['show_topic_count'] = false;
-		$args['show_reply_count'] = false;
-		$args['count_sep'] = '';
-		return $args;
-	}
-	add_filter('bbp_before_list_forums_parse_args', 'remove_counts' );
-
-
-
-	/* Menu */
-
-	if(!function_exists('get_post_top_ancestor_id')){
-		/**
-		* Gets the id of the topmost ancestor of the current page. Returns the current
-		* page's id if there is no parent.
-		*
-		* @uses object $post
-		* @return int
-		*/
-		function get_post_top_ancestor_id(){
-			global $post;
-
-			if($post->post_parent){
-				$ancestors = array_reverse(get_post_ancestors($post->ID));
-				return $ancestors[0];
-			}
-
-			return $post->ID;
 		}
-	}
 
-
-	// To give Editors access to the ALL Forms menu
-	function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
-		$capabilities = "edit_pages";
-		return $capabilities;
-	}
-	add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
-	add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
-	// To give Editors access to ADD New Forms
-	function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
-		$capabilities = "edit_pages";
-		return $capabilities;
-	}
-	add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
-	add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
-	/* To give Editors access to the Submissions - Simply replace ‘edit_posts’ in the code snippet below with the capability
-	that you would like to attach the ability to view/edit submissions to.Please note that all three filters are needed to
-	provide proper submission viewing/editing on the backend!
-	*/
-	function nf_subs_capabilities( $cap ) {
-		return 'edit_posts';
-	}
-	add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
-	add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' );
-	add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
+		add_action('after_setup_theme', 'wp_theme_setup');
+		add_image_size( 'sponsor-thumbnail', 75 );
 
 
 
-	?>
+
+
+		// Default admin bar to hidden
+		add_action("user_register", "set_user_admin_bar_false_by_default", 10, 1);
+		function set_user_admin_bar_false_by_default($user_id) {
+			update_user_meta( $user_id, 'show_admin_bar_front', 'false' );
+			update_user_meta( $user_id, 'show_admin_bar_admin', 'false' );
+		}
+
+
+
+		/** Add a new default avatar **/
+		add_filter( 'avatar_defaults', 'add_gravatar' );
+
+		function add_gravatar ($avatar_defaults) {
+			$myavatar = get_bloginfo('template_directory') . '/images/wff-avatar.jpg';
+			$avatar_defaults[$myavatar] = "WFF_Avatar";
+			return $avatar_defaults;
+		}
+		// BuddyPress Functions
+		add_theme_support( 'buddypress' );
+
+
+		// Only return one entry for revision log otherwise it gets cluttered
+		function bbp_trim_revision_log( $r='' ) {
+			$arr = array( end( $r ));
+			reset( $r );
+
+			return( $arr );
+		}
+
+		add_filter( 'bbp_get_reply_revisions', 'bbp_trim_revision_log', 20, 1 );
+		add_filter( 'bbp_get_topic_revisions', 'bbp_trim_revision_log', 20, 1 );
+
+
+		function remove_counts() {
+			$args['show_topic_count'] = false;
+			$args['show_reply_count'] = false;
+			$args['count_sep'] = '';
+			return $args;
+		}
+		add_filter('bbp_before_list_forums_parse_args', 'remove_counts' );
+
+
+
+		/* Menu */
+
+		if(!function_exists('get_post_top_ancestor_id')){
+			/**
+			* Gets the id of the topmost ancestor of the current page. Returns the current
+			* page's id if there is no parent.
+			*
+			* @uses object $post
+			* @return int
+			*/
+			function get_post_top_ancestor_id(){
+				global $post;
+
+				if($post->post_parent){
+					$ancestors = array_reverse(get_post_ancestors($post->ID));
+					return $ancestors[0];
+				}
+
+				return $post->ID;
+			}
+		}
+
+
+		// To give Editors access to the ALL Forms menu
+		function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
+			$capabilities = "edit_pages";
+			return $capabilities;
+		}
+		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+		add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+		// To give Editors access to ADD New Forms
+		function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
+			$capabilities = "edit_pages";
+			return $capabilities;
+		}
+		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
+		add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
+		/* To give Editors access to the Submissions - Simply replace ‘edit_posts’ in the code snippet below with the capability
+		that you would like to attach the ability to view/edit submissions to.Please note that all three filters are needed to
+		provide proper submission viewing/editing on the backend!
+		*/
+		function nf_subs_capabilities( $cap ) {
+			return 'edit_posts';
+		}
+		add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
+		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' );
+		add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
+
+
+
+		?>

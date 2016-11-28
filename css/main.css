@@ -679,30 +679,3 @@ a.long-text-button span {
 .footer-nav-item-list li.footer-nav-end {
 	border: none;
 }
-
-/* Social Nav */
-
-/*
-* Not needed
-.social-nav-item-list {
-display: inline-flex;
-display: -ms-inline-flexbox;
-display: -webkit-inline-flex;
-float: right;
-position: relative;
-}
-
-.socail-nav-item-list a {
-font-size: 11pt;
-font-weight: bold;
-}
-
-.social-nav-item-list a {
-color: #FFFFFF;
-}
-
-.social-nav-item-list li {
-list-style: none;
-padding: 5px 10px 5px 10px;
-}
-*/

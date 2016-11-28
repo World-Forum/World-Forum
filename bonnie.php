@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header();
 
 /* Template Name: BB Interior */
 
@@ -9,18 +9,18 @@ if (have_posts()) :
 
 <a id="top"></a>
 <div class="page-container background-white">
-  <div class="sidebar-container fixed-sidebar ">
-    <?php dynamic_sidebar( 'cafe_widget_logo' ); ?>
-    <div class="global-cafe-sidebar">
-      <?php dynamic_sidebar( 'cafe_widget' ); ?>
-    </div>
-  </div>
-  <div class="content-container global-cafe ">
-    <h1>
-      <?php the_title(); ?>
-    </h1>
-    <?php the_content(); ?>
-  </div>
-  <?php dynamic_sidebar( 'sotm_widget' ); ?>
+	<div class="sidebar-container fixed-sidebar ">
+		<?php dynamic_sidebar( 'cafe_widget_logo' ); ?>
+		<div class="global-cafe-sidebar">
+			<?php dynamic_sidebar( 'cafe_widget' ); ?>
+		</div>
+	</div>
+	<div class="content-container global-cafe ">
+		<h1>
+			<?php the_title(); ?>
+		</h1>
+		<?php the_content(); ?>
+	</div>
+	<?php dynamic_sidebar( 'sotm_widget' ); ?>
 </div>
 <?php get_footer(); ?>

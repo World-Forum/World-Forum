@@ -1,21 +1,21 @@
 <?php
 /**
- * BuddyPress - Members Activate
- *
- * @package BuddyPress
- * @subpackage bp-legacy
- */
-get_header(); 
+* BuddyPress - Members Activate
+*
+* @package BuddyPress
+* @subpackage bp-legacy
+*/
+get_header();
 ?>
 
 <div id="buddypress" class="page-container">
 	<?php
 
 	/**
-	 * Fires before the display of the member activation page.
-	 *
-	 * @since 1.1.0
-	 */
+	* Fires before the display of the member activation page.
+	*
+	* @since 1.1.0
+	*/
 	do_action( 'bp_before_activation_page' ); ?>
 
 	<div class="full-page-content" id="activate-page">
@@ -28,10 +28,10 @@ get_header();
 		<?php
 
 		/**
-		 * Fires before the display of the member activation page content.
-		 *
-		 * @since 1.1.0
-		 */
+		* Fires before the display of the member activation page content.
+		*
+		* @since 1.1.0
+		*/
 		do_action( 'bp_before_activate_content' ); ?>
 
 		<?php if ( bp_account_was_activated() ) : ?>
@@ -62,10 +62,10 @@ get_header();
 		<?php
 
 		/**
-		 * Fires after the display of the member activation page content.
-		 *
-		 * @since 1.1.0
-		 */
+		* Fires after the display of the member activation page content.
+		*
+		* @since 1.1.0
+		*/
 		do_action( 'bp_after_activate_content' ); ?>
 
 	</div><!-- .page -->
@@ -73,12 +73,11 @@ get_header();
 	<?php
 
 	/**
-	 * Fires after the display of the member activation page.
-	 *
-	 * @since 1.1.0
-	 */
+	* Fires after the display of the member activation page.
+	*
+	* @since 1.1.0
+	*/
 	do_action( 'bp_after_activation_page' ); ?>
 
 </div><!-- #buddypress -->
 <?php get_footer(); ?>
-

@@ -7,10 +7,10 @@ if (have_posts()) :
 <?php endwhile; endif; ?>
 
 
-<div class="page-container">
-  <div class="full-page-content">
+<div class="page-container background-white">
+	<div class="full-page-content">
 
-    <?php the_content(); ?>
-  </div>
+		<?php the_content(); ?>
+	</div>
 </div>
 <?php get_footer(); ?>
