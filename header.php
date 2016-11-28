@@ -28,7 +28,7 @@ $main_menu_items_wrap =
 		<div class="top-float-bar">
 			<div class="search-bar">
 				<form  role="search" action="<?php echo home_url( '/' ); ?>" method="get">
-					<input type="text" name="s" id="search" placeholder=' Search the <?php echo bloginfo('name'); ?>' value="<?php the_search_query(); ?>" />
+					<input type="text" name="s" id="search" placeholder=' Search the World Forum' value="<?php the_search_query(); ?>" />
 				</form>
 			</div>
 			<?php wp_nav_menu( array(
