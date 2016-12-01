@@ -17,6 +17,7 @@ $main_menu_items_wrap =
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width">
+		   <link rel="stylesheet" type="text/css" href="css/main.css">
 		<title>
 			<?php bloginfo('name'); ?>
 		</title>
