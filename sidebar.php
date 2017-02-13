@@ -12,9 +12,9 @@ if (have_posts()) :
 		$children = get_pages('child_of='.get_post_top_ancestor_id()); ?>
 		<?php if( count( $children ) != 0 ) { ?>
 			<ul class="sidebar-nav">
-				<h3 class="sidebar-nav-title" ><strong>
+				<li class="sidebar-nav-title" ><strong>
 					<?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
-				</strong></h3>
+				</strong></li>
 				<?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
 			</ul>
 			<?php } ?>

@@ -1,0 +1,196 @@
+
+/*
+*    Media Quieries
+*/
+/
+@media screen and (max-width: 1000px) {
+
+	body {
+		margin: 0;
+	}
+
+	.page-container,
+	.site-header,
+	.site-footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.feature-su-post,
+	.feature-su-post-thumbnail > img {
+		height: 85%;
+		width: 215px;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+	.sponsors {
+		hieght: 50px;
+		margin-top: 715px
+	}
+
+	.homepage-img-4 {
+		display: none;
+	}
+
+	.homepage-logo,
+	.homepage-banner-img {
+		width: 23%;
+	}
+
+	.homepage-banner {
+		margin-left: 25px;
+	}
+
+	.homepage-bg {
+		background-size: 100% 1250px;
+	}
+
+	nav.main-nav a {
+		font-size: auto;
+	}
+
+	.homepage-colored-row {
+		height: 1000px;
+	}
+
+	.feature-su-post,
+	.feature-su-post-thumbnail > img {
+		height: 75%;
+		width: 175px;
+	}
+
+	.feature-su-posts-loop {
+		margin: 10px 10% 0;
+	}
+
+
+	.homepage-block-row .homepage-block {
+		margin: 0 !important;
+	}
+
+
+	.sidebar-nav-title {
+		font-size: 12px;
+	}
+
+	#footer-nav-container {
+		margin-left: 15% !important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.feature-su-posts-loop {
+		margin: 10px 2% 0;
+	}
+
+	#footer-nav-container {
+		margin-left: 5% !important;
+	}
+
+	.homepage-slogan {
+		font-size: 20pt;
+	}
+}
+
+@media screen and (max-width: 641px) {
+
+	nav.header-nav {
+		margin-top: -60px;
+	}
+
+	.translate {
+		clear: both;
+		margin-left: 25%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.full-page-content,
+	#full-page-content {
+		padding: 0;
+	}
+
+	.sponsors {
+		hieght: 25px;
+	}
+
+	.site-footer {
+		height: 150px;
+	}
+
+	.homepage-banner {
+		margin-top: 50px;
+		margin-left: 45px;
+	}
+
+	.homepage-block-row .su-column {
+		float: none !important;
+		margin: 0 0 0 10% !important;
+		width: 75% !important;
+	}
+
+	.homepage-block {
+		padding: 0;
+	}
+	.wfcc-home-arrow,
+	.primary-nav-item-list {
+		display: none;
+	}
+
+	.feature-su-post-title a {
+		font-size: 60%;
+	}
+
+	.feature-excpert {
+		font-size: 60%;
+	}
+
+	.feature-su-post,
+	.feature-su-post-thumbnail > img {
+		float: none;
+		height: 85%;
+		width: 215px;
+	}
+
+	.feature-su-post {
+		margin-bottom: 100px;
+		margin-left: 25%
+	}
+
+
+
+
+
+	#activity-stream {
+		padding-left: 3px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.homepage-img-3 {
+		display: none;
+	}
+
+	.homepage-banner {
+		margin-left: 25px;
+	}
+
+	.homepage-logo,
+	.homepage-banner-img {
+		width: 32%;
+	}
+
+
+	.homepage-slogan {
+		font-size: 15pt;
+	}
+}
