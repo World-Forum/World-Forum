@@ -4,3 +4,22 @@
 @import 'site/navigation';
 @import 'site/typography';
 @import 'site/footer';
+
+
+
+.page-container {
+	box-shadow: 0 -5px 10px -2px $color_grey;
+	@include flexbox();
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	padding-top: 75px;
+	width: 100%;
+}
+
+@media screen and (max-width: 675px) {
+	.page-container {
+		flex-direction: column;
+		padding-top: 0;
+	}
+}

@@ -1,27 +1,11 @@
-
-
-.background-white {
-	background: rgba(255, 255, 255, 0.75);
-}
-
-.page-container {
-	box-shadow: 0 0px 10px -2px $color_grey;
-	display: inline-block;
-	margin-top: 75px;
-	max-width: 1000px;
-	width: 100%;
-}
-
 .content-container {
-	float: right;
-	max-width: 750px;
-	padding: 5% 6% 25px 10px;
-	width: 65%;
+	display: block;
+	padding: 25px;
+	width: 66%;
 }
 
 .full-page-content {
-	padding: 50px;
-	margin-top: 25px;
+	padding: 25px;
 }
 
 .bonnies-blog-content {
@@ -184,6 +168,45 @@
 	width: 1000px;
 }
 
+
+/*--------------- Sponsor Widget ---------------*/
+
+.sotm {
+	background-color: rgba(255,255,255,0.75);
+	display: flex;
+	flex: 1;
+	width: 100%;
+
+	.textwidget {
+		margin-left : 15px;
+		text-align  : center;
+		width         : 225px;
+		float         : left;
+		overflow      : hidden;
+		border        : 1px solid #555555;
+		border-radius : 12px;
+		background    : #FFFFFF;
+
+
+		.sotm-title {
+			width         : 200px;
+			float         : left;
+			margin-bottom : 0;
+			padding       : 10px 10px 0 10px;
+			font-family   : OpenSansItalic;
+			font-size     : 12pt;
+		}
+
+		.sotm-title-special {
+			padding-bottom : 5px;
+			color          : #4db5a8;
+			border-bottom  : 1px solid #58585a;
+			font-size      : 16px;
+			font-weight    : bold;
+		}
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	body {
 		margin: 0;
@@ -191,7 +214,6 @@
 }
 
 @media screen and (max-width: 675px) {
-
 
 	.page-container ,
 	.admin-bar .page-container {
@@ -201,5 +223,18 @@
 	.content-container {
 		margin: 0 auto;
 		width: 90%;
+	}
+
+	.sotm {
+
+		.textwidget {
+			width: 100%;
+			margin: 0;
+			border-radius: 0;
+
+			.sotm-title {
+				width: 100%;
+			}
+		}
 	}
 }
