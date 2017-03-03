@@ -29,8 +29,8 @@
 }
 
 .sidebar-container.global-cafe {
-	background: url('../images/bblog-bboard.jpg');
-	background-size: cover;
+	background: url('../images/bblog-bboard.jpg') no-repeat;
+	background-size: contain;
 	margin-left: 10px;
 	position: relative;
 }
