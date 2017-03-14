@@ -1,6 +1,6 @@
 .content-container {
 	display: block;
-	padding: 50px 25px 0;
+	padding: 25px;
 	width: 66%;
 }
 
@@ -13,7 +13,9 @@
 	padding-right: 50px;
 }
 
-/**
+
+
+/*
 *      Homepage
 */
 .homepage-featured-img {
@@ -28,7 +30,11 @@
 	display: inline-block;
 	height: 200px;
 	left: -50px;
+
+	/* ADD CSS*/
 	margin-top: 75px;
+
+
 	max-width: 1100px;
 	position: relative;
 	width: 110%;
@@ -68,6 +74,10 @@
 	font-size: 26pt;
 	margin-bottom: 0 !important;
 	text-align: center;
+}
+
+.wff-home-arrow {
+	margin-top: -120px !important;
 }
 
 .homepage-padding {
@@ -193,6 +203,12 @@
 			font-size      : 16px;
 			font-weight    : bold;
 		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		margin: 0;
 	}
 }
 
