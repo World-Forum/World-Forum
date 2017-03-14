@@ -23,16 +23,7 @@ if ( !function_exists( 'world_forum_theme_setup' ) ) {
 		}
 		add_action( 'wp_enqueue_scripts', 'wff_theme_styles');
 
-		/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
-		add_theme_support(
-			'html5',
-			array(
-				'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
-			)
-		);
+
 
 		// Register Menus
 		register_nav_menus( array(
@@ -43,6 +34,8 @@ if ( !function_exists( 'world_forum_theme_setup' ) ) {
 			'sidebar-nav' => __('Sidebar Menu')
 			)
 		);
+
+
 
 		/**
 		* Register our sidebars and widgetized areas.
@@ -97,11 +90,25 @@ if ( !function_exists( 'world_forum_theme_setup' ) ) {
 		add_theme_support('post-thumbnails');
 		// Custom Background
 		add_theme_support( 'custom-background' );
+		/*
+		* Switch default core markup for search form, comment form, and comments
+		* to output valid HTML5.
+		*/
+		add_theme_support(
+			'html5',
+			array(
+				'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+			)
+		);
+		// Add specific CSS class by filter.
+		add_filter( 'body_class', function( $classes ) {
+			return array_merge( $classes, array( 'world-forum-body' ) );
+		} );
 
 	}  // End world_forum_theme_setup()
 	add_action('after_setup_theme', 'world_forum_theme_setup');
 
-} // End if ( !function_exists( 'world_forum_theme_setup' ) ) 
+} // End if ( !function_exists( 'world_forum_theme_setup' ) )
 
 function run_activate_plugin( $plugin ) {
 	$current = get_option( 'active_plugins' );
