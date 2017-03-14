@@ -8,9 +8,10 @@
 	width: 100%;
 
 	#footer-nav-container {
-		margin-left: 21%;
+		margin: 0 auto;
 
 		.footer-nav-item-list {
+			-webkit-padding-start: 0;
 			display: inline-flex;
 			display: -ms-inline-flexbox;
 			display: -webkit-inline-flex;
@@ -19,7 +20,7 @@
 			position: relative;
 
 			a {
-				font-size: 11pt;
+				font-size: 0.9em;
 				font-weight: bold;
 
 				color: #ffffff;
@@ -59,8 +60,4 @@
 	margin-top: 10px;
 	text-align: center;
 	width: 100%;
-}
-
-@media screen and (max-width: 675px) {
-
 }
