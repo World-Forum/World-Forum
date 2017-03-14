@@ -3,7 +3,7 @@
 *    Media Quieries
 */
 
-/*
+
 @media screen and (max-width: 900px) {
 	.feature-su-post,
 	.feature-su-post-thumbnail > img {
@@ -13,14 +13,11 @@
 }
 
 @media screen and (max-width: 800px) {
-	.homepage-banner {
-		margin-left: 25px;
-	}
 
-	.homepage-colored-row {
-		height: 1000px;
+/*	.homepage-colored-row {
+	height: 1000px;
 	}
-
+*/
 	.feature-su-post,
 	.feature-su-post-thumbnail > img {
 		height: 75%;
@@ -38,10 +35,6 @@
 
 	.sidebar-nav-title {
 		font-size: 12px;
-	}
-
-	#footer-nav-container {
-		margin-left: 15% !important;
 	}
 }
 
