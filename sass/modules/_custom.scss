@@ -142,20 +142,19 @@
 	text-align    : center;
 	font-family   : BreeSerif;
 	font-size     : inherit !important;
-}
 
-.su-carousel .su-carousel-slide img {
-	height        : inherit !important;
-	padding       : 0 !important;
-	border        : 0 !important;
-	border-radius : 12px !important;
-}
+	.su-carousel-slide {
+		width     : 100%;
+		max-width : 300px;
 
-.su-carousel-slide {
-	width     : 100%;
-	max-width : 300px;
+		img {
+			height        : inherit !important;
+			padding       : 0 !important;
+			border        : 0 !important;
+			border-radius : 12px !important;
+		}
+	}
 }
-
 /** Gallery*/
 
 .su-custom-gallery-slide img {
@@ -193,75 +192,77 @@
 .su-project-posts-loop {
 	display: flex;
 	flex-wrap: wrap;
-}
 
-.su-project-posts-loop  a {
-	flex: 1 275px;
-	justify-content: center;
+	a {
+		flex: 1 275px;
+		justify-content: center;
 
-	display: flex;
-}
+		display: flex;
+	}
 
-.su-project-post {
-	max-width     : 225px;
-	float         : left;
-	margin        : 10px;
-	padding       : 15px;
-	border-radius : 12px;
-	background    : rgba(182,219,209,1);
-}
 
-.su-project-posts-loop .su-project-post img {
-	width         : 100%;
-	height        : 100%;
-	max-height    : 225px;
-	border-radius : 0;
-}
+	.su-project-post {
+		max-width     : 225px;
+		float         : left;
+		margin        : 10px;
+		padding       : 15px;
+		border-radius : 12px;
+		background    : rgba(182,219,209,1);
 
-.su-project-posts-loop .su-project-post .su-projects-post-excerpt {}
+		img {
+			width         : 100%;
+			height        : 100%;
+			max-height    : 225px;
+			border-radius : 0;
+		}
 
-.su-project-posts-loop .su-project-post .su-projects-post-excerpt p {
-	-webkit-margin-before : 0;
-	-webkit-margin-after  : 0;
-	text-align            : center;
-	font-size             : 10pt;
+		.su-projects-post-excerpt {
+
+			p {
+				-webkit-margin-before : 0;
+				-webkit-margin-after  : 0;
+				text-align            : center;
+				font-size             : 10pt;
+			}
+		}
+	}
 }
 
 .ior-featured-img {
 	text-align : center;
-}
 
-.ior-featured-img img {
-	margin        : 15px 0 15px;
-	border        : 1px solid #58585a;
-	border-radius : 0;
+	img {
+		margin        : 15px 0 15px;
+		border        : 1px solid #58585a;
+		border-radius : 0;
+	}
 }
 
 /*Global Cafe Loop*/
 
-.su-cafe-posts-loop {}
+.su-cafe-posts-loop {
 
-.su-cafe-post {
-	display : inline-block;
-	width   : 100%;
-}
+	.su-cafe-post {
+		display : inline-block;
+		width   : 100%;
 
-.su-cafe-thumb {
-	max-width   : 275px;
-	height      : 100%;
-	float       : left;
-	padding-top : 30px;
-}
+		.su-cafe-thumb {
+			max-width   : 275px;
+			height      : 100%;
+			float       : left;
+			padding-top : 30px;
+			img {
+				width         : 90%;
+				height        : 90%;
+				border-radius : 5px;
+			}
+		}
 
-.su-cafe-thumb img {
-	width         : 90%;
-	height        : 90%;
-	border-radius : 5px;
-}
-
-.su-cafe-post-excerpt {
-	max-width : 375px;
-	float     : right;
+		.su-cafe-post-excerpt {
+			max-width : 375px;
+			float     : right;
+		}
+	}
 }
 
 /*--------------- Focused Work Resource & News Box ---------------*/
