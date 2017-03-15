@@ -118,7 +118,6 @@
 
 .homepage-block-row {
 
-
 	.homepage-block {
 		margin-left: 1% !important;
 
@@ -133,6 +132,10 @@
 				padding: 0;
 			}
 		}
+	}
+
+	:hover {
+		opacity: .95;
 	}
 }
 
