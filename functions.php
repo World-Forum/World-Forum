@@ -14,10 +14,10 @@ if ( !function_exists( 'world_forum_theme_setup' ) ) {
 		function wff_theme_styles() {
 			wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 
+			// keep styles out of the dashboard
 			if ( !is_admin() ) {
 				wp_enqueue_style( 'the_css', get_template_directory_uri() . '/css/main.min.css' );
 				wp_enqueue_style( 'the_sass', get_template_directory_uri() . '/sass/main.min.css' );
-				wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.min.css' );
 				wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.min.css' );
 			} // End if ( !is_admin() )
 		}
