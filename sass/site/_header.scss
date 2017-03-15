@@ -1,10 +1,9 @@
-.admin-bar .top-float-bar ,
-.admin-bar .site-header  {
+.admin-bar .top-float-bar {
 	margin-top: 32px;
 }
 
 .admin-bar .page-container  {
-	margin-top: 77px;
+	margin-top: 40px;
 }
 /* Top Float Bar */
 
@@ -19,7 +18,7 @@
 
 	.wrapper {
 		padding: 10px 0 10px;
-		display: flex;
+		@include flexbox();
 		flex-direction: row-reverse;
 
 		.search-bar {
@@ -46,10 +45,10 @@
 	background: $color_blue-dark;
 	box-shadow: 0 2px 10px -2px $color_grey;
 	display: inline-block;
-	margin-top: 30px;
 	max-width: 1000px;
 	position: fixed;
 	width: 100%;
+	top: 40px;
 	z-index: 1;
 }
 

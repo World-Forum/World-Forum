@@ -1,6 +1,32 @@
-@import 'site/header';
-@import 'site/content';
-@import 'site/sidebar';
-@import 'site/navigation';
-@import 'site/typography';
-@import 'site/footer';
+.world-forum-body {
+	margin: 0;
+
+	.wrapper {
+		margin: 0 auto;
+		max-width: 1000px;
+		width: 100%;
+	}
+}
+
+.page-container {
+	box-shadow: 0 -5px 10px -2px $color_grey;
+	@include flexbox();
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 100px;
+	width: 100%;
+}
+
+@media screen and (max-width: 675px) {
+	.page-container {
+		flex-direction: column;
+		padding-top: 0;
+	}
+}
+
+@import 'typography';
+@import 'header';
+@import 'content';
+@import 'sidebar';
+@import 'footer';
+@import 'navigation';

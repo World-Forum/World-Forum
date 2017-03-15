@@ -3,7 +3,7 @@
 */
 
 #top-nav-container {
-	display: flex;
+	@include flexbox();
 	flex: initial;;
 	justify-content: flex-end;
 
@@ -14,7 +14,7 @@
 		-webkit-margin-end: 0px;
 		-webkit-padding-start: 0;
 		margin: 0;
-		display: flex;
+		@include flexbox();
 		flex-direction: row;
 		list-style: none;
 
@@ -63,7 +63,7 @@
 				opacity: 0;
 				position: absolute;
 				margin-left: -10px;
-				top: 66px;
+				top: 70px;
 				z-index: -1;
 				transition: all 0.3s ease-in-out 0s, visibility 0s ease-in-out  0.3s, z-index 0s ease-in-out  0s;
 				min-width: 110px;

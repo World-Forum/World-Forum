@@ -24,24 +24,26 @@ img {
 	height: 100%;
 }
 
-a img.alignright {
-	float: right;
-	margin: 5px 0 20px 20px;
-}
+a  {
+	img.alignright {
+		float: right;
+		margin: 5px 0 20px 20px;
+	}
 
-a img.alignnone {
-	margin: 5px 20px 20px 0;
-}
+	img.alignnone {
+		margin: 5px 20px 20px 0;
+	}
 
-a img.alignleft {
-	float: left;
-	margin: 5px 20px 20px 0;
-}
+	img.alignleft {
+		float: left;
+		margin: 5px 20px 20px 0;
+	}
 
-a img.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto
+	img.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
 }
 
 .wp-caption {
@@ -88,7 +90,6 @@ a img.aligncenter {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 .gallery-item {
 	display: inline-block;
 	margin: 0;
@@ -144,23 +145,12 @@ a img.aligncenter {
 	padding: 0.5em 0;
 }
 
-
-
-.gallery-columns-3 .gallery-item {
-	padding: 0;
-}
-
-
 .gallery-columns-6 .gallery-caption,
 .gallery-columns-7 .gallery-caption,
 .gallery-columns-8 .gallery-caption,
 .gallery-columns-9 .gallery-caption {
 	display: none;
 }
-
-
-
-
 
 
 .global-cafe img,

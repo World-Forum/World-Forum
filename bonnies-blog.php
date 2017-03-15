@@ -6,8 +6,9 @@ if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
 <?php endwhile; endif; ?>
 <a id="top"></a>
-<div class="page-container  background-white">
+<div class="page-container background-white">
 	<?php the_post_thumbnail(); ?>
+
 	<div class="sidebar-container  global-cafe ">
 		<?php dynamic_sidebar( 'cafe_widget' ); ?>
 	</div>
@@ -15,7 +16,8 @@ if (have_posts()) :
 		<?php the_content(); ?>
 
 	</div>
-	<?php dynamic_sidebar( 'sotm_widget' ); ?>
-</div>
 
+
+</div>
+<?php dynamic_sidebar( 'sotm_widget' ); ?>
 <?php get_footer(); ?>

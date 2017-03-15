@@ -2,11 +2,9 @@
 
 /* Template Name: BB Interior */
 
-
 if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
 <?php endwhile; endif; ?>
-
 <a id="top"></a>
 <div class="page-container background-white">
 	<div class="sidebar-container fixed-sidebar ">
@@ -21,6 +19,7 @@ if (have_posts()) :
 		</h1>
 		<?php the_content(); ?>
 	</div>
-	<?php dynamic_sidebar( 'sotm_widget' ); ?>
 </div>
+<?php dynamic_sidebar( 'sotm_widget' ); ?>
+
 <?php get_footer(); ?>

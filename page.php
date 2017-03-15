@@ -34,7 +34,8 @@ if (have_posts()) :
 						<?php } ?>
 						<hr />
 						<?php the_content(); ?>
-						<?php dynamic_sidebar( 'sotm_widget' ); ?>
+
 					</div>
 				</div>
+				<?php dynamic_sidebar( 'sotm_widget' ); ?>
 				<?php get_footer(); ?>

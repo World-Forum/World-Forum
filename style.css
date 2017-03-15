@@ -3,15 +3,16 @@
 Theme Name: World Forum Foundation
 Theme URI: http://worldforumfoundation.org
 Description: Theme built by Dimensions Educational Research Foundation for the World Forum
-Version: 3.0
+Version: 3.4
+Version Updated: March 15th, 2017
 Author: Michael Kracke
 Author URI: http://dimensionsfoundation.org
 Tags: one, two
+Text Domain: world-forum
 */
 
-
-
-/* Color Palette
+/**
+*                  Color Palette
 *                  Hex   |     RGB
 *                -----------------------
 * Blue, Dark:    #054f7d | 05,79,125
@@ -22,10 +23,3 @@ Tags: one, two
 * Green, Light:  #b6bdb1 | 182,219,209
 * Gray:          #58585a | 88,88,90
 */
-
-/*
-*     Load Fonts
-*/
-
-/* Import Complied Custom SCSS */
-@import url("sass/main.css");
